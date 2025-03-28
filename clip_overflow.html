@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>overflow-x: clip 예제</title>
+    <style>
+        .container {
+            width: 300px;
+            height: 100px;
+            border: 2px solid black;
+            overflow-x: clip;
+            white-space: nowrap;
+        }
+        .content {
+            width: 500px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <h2>overflow-x: clip 예제</h2>
+    <div class="container">
+        <div class="content">이 텍스트는 너무 길어서 넘치지만 clip 속성으로 숨겨집니다.</div>
+    </div>
+</body>
+</html>
