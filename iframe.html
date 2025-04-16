@@ -1,11 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <body>
 
 <h1>The iframe element</h1>
 
 <iframe src="https://n.news.naver.com/article/030/0003302312" title="W3Schools Free Online Web Tutorials">
 </iframe>
+
+<div id="content"></div>
+<script>
+  fetch("https://n.news.naver.com/article/030/0003302312")
+    .then(response => response.text())
+    .then(html => {
+      document.getElementById("content").innerHTML = html;
+    });
+</script>
 
 </body>
 </html>
